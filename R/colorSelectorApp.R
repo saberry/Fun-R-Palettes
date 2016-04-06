@@ -1,0 +1,40 @@
+#' Interactively Select A Fun Palette
+#'
+#' @author
+#' Seth Berry
+#' @description
+#' This function will open a Shiny gadget that will let you look at each
+#' color palette.  You will see the palette and the hex values will be
+#' printed out to the console on each selection.
+#' @examples
+#' funPalPicker()
+#' @export
+
+funPalPicker = function() {
+
+library(shiny); library(miniUI)
+
+source("funPalettes.R")
+
+source("showFunPal.R")
+
+ui = miniPage(
+  gadgetTitleBar("Fun Palette Color Selector",
+                 left = miniTitleBarCancelButton(),
+                 right = miniTitleBarButton("done", "Done", primary = TRUE)),
+  miniContentPanel(selectInput("funPalSelection", "Pick Your Palette!",
+                                choices = names(funPals)),
+                   plotOutput("funPalPlot"))
+)
+
+server = function(input, output, session) {
+  output$funPalPlot = renderPlot({
+    showFunPal(input$funPalSelection)
+  })
+  observeEvent(input$done, {
+    stopApp()
+  })
+}
+
+runGadget(ui, server)
+}
