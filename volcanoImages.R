@@ -1,3 +1,5 @@
+par(mfrow = c(2, 3))
+
 image(volcano, col = funPals[["spBoys"]], main = "South Park Boys")
 
 image(volcano, col = funPals[["spKenny"]], main = "Kenny")
@@ -10,6 +12,8 @@ image(volcano, col = funPals[["spCartman"]], main = "Cartman")
 
 image(volcano, col = funPals[["spcredits"]], main = "Credits")
 
+par(mfrow = c(2, 2))
+
 image(volcano, col = funPals[["boem"]], main = "Brotherhood of Mutants")
 
 image(volcano, col = funPals[["xmen1"]], main = "X-Men 1")
@@ -17,6 +21,8 @@ image(volcano, col = funPals[["xmen1"]], main = "X-Men 1")
 image(volcano, col = funPals[["xmen2"]], main = "X-Men 2")
 
 image(volcano, col = funPals[["marvel"]], main = "Marvel Group")
+
+par(mfrow = c(1, 3))
 
 image(volcano, col = funPals[["turboKid1"]], main = "Turbo Kid 1")
 
