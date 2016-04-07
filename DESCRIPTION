@@ -1,0 +1,15 @@
+Package: funRPals
+Title: A Collection of Fun(ky) R Palettes
+Version: 0.0.0.9000
+Author: Seth Berry
+Maintainer: <seth.berry@nd.edu>
+Description: This package is a collection of different color palettes. Each
+    palette has a preview and hex values.
+Depends:
+    R (>= 3.2.3),
+    shiny,
+    miniUI,
+    magrittr
+License: MIT
+LazyData: true
+RoxygenNote: 5.0.1

@@ -7,23 +7,36 @@ Fun R Palettes
 -   [Beavis and Butthead](#beavis-and-butthead)
 -   [Friday the 13th](#friday-the-13th)
 
-This package is for extracting color palettes from various images.
+
+Package Description
+-------------------
+
+This package is for picking fun palettes to use in R.  It is nothing more than an assortment of goofy things that I enjoy. There are only two real functions (**showFunPals** & **funPalPicker**), but you can hopefully get some enjoyment out of seeing some of the palettes.  The **funPalPicker** function is an gadget that will open in your RStudio Viewer pane.
+
+Installation
+------------
+
+```{r}
+devtools::install_github('saberry/Fun-R-Palettes')
+```
 
 South Park
 ----------
 
 ![](images/southParkBoys.png)
 
-There will be palettes derived from the main characters in South Park and from the closing credits.
+These are palettes derived from the main characters in South Park and from the closing credits.
 
-![](images/spVolcano.svg)
+![](images/southParkVolcano.png)
 
 Turbo Kid
 ---------
 
 ![](images/turboKid2.jpg)
 
-![](images/turboKidVolcano.svg)
+Turbo Kid is an awesome movie.  If you have not seen it, I recommend you do so.  Some people say that you can sync it up with Lazerhawk's "Redline" album, but I am never sure when to take the cassette off pause.
+
+![](images/turboKidVolcano.png)
 
 Marvel
 ------
@@ -32,7 +45,7 @@ Marvel
 
 Because a 5-year-old demands it to be so.
 
-![](images/marvelVolcano.svg)
+![](images/marvelVolcano.png)
 
 Beavis and Butthead
 -------------------

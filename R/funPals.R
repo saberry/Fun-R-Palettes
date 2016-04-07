@@ -5,6 +5,7 @@
 #' @format A list containing 13 items
 #' \describe{
 #'  \item{paletteName}{The name of each palette}}
+#'  @export
 
 "funPals"
 
