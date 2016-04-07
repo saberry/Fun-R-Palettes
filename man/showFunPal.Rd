@@ -6,12 +6,19 @@
 \usage{
 showFunPal(name, n)
 }
+\arguments{
+\item{name}{Name of desired palette. Choices are:
+\code{spBoys}, \code{spCartman},  \code{spcredits},
+\code{spKenny}, \code{spKyle},  \code{spStan}, \code{boem},
+\code{xmen1},  \code{xmen2}, \code{marvel},
+\code{turboKid1}, \code{turboKid2}, \code{turboKid3}}
+}
 \description{
 This function will simultaneously plot the color palette and print
 the hex values to console.
 }
 \examples{
-showFunPal()
+showFunPal("spBoys")
 }
 \author{
 Seth Berry

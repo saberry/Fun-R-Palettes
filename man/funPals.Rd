@@ -5,7 +5,7 @@
 \alias{funPals}
 \title{Hex Values for Palettes}
 \format{A list containing 13 items
-/describe{
+\describe{
  \item{paletteName}{The name of each palette}}}
 \usage{
 funPals
