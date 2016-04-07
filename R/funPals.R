@@ -3,7 +3,7 @@
 #' A list containing all of the palettes and their associated hex values.
 #'
 #' @format A list containing 13 items
-#' /describe{
+#' \describe{
 #'  \item{paletteName}{The name of each palette}}
 
 "funPals"
@@ -20,4 +20,6 @@ funPals = list(spBoys = c("#000000", "#429361", "#7D4335", "#E24C1F", "#F3DDC3")
                marvel = c("#26191C", "#736D6C", "#B65242", "#D4B996", "#FCFAF7"),
                turboKid1 = c("#0B0C0C", "#483E38", "#58919A", "#C6843B", "#D6D9C5"),
                turboKid2 = c("#0E0E16", "#424853", "#798F96", "#CD8D52", "#FAF9F5"),
-               turboKid3 = c("#141216", "#5E362B", "#6F715C", "#B4A68B", "#F1EDE4"))
+               turboKid3 = c("#141216", "#5E362B", "#6F715C", "#B4A68B", "#F1EDE4"),
+               beavisButthead = c("#090806", "#554C40", "#6E9FAA", "#7FD0CD",
+                                  "#C1904F", "#C7CDCC", "#CC8A90", "#F8E168"))

@@ -40,6 +40,9 @@ kenny = "http://vignette2.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormic
 boys = "http://orig13.deviantart.net/4dd6/f/2014/071/d/d/hooplah_by_xanyleaves-d79x17l.png"
 credits = "http://i.stack.imgur.com/ByzO3.png"
 
+## Beavis and Butthead
+
+beavisButthead = "https://johnjamesdamico.files.wordpress.com/2011/10/beavis-and-butthead.png"
 
 ### Color Extraction ###
 
@@ -86,6 +89,10 @@ kennyCol = spCols[[4]]
 boysCol = spCols[[5]]
 
 creditsCol = spCols[[6]]
+
+## Beavis and Butthead
+
+beavisButtheadCol = extract_colours(beavisButthead, num_col = 8)
 
 nameSetter = function(palNam, groupCols, indNum){
   palName = groupCols[[indNum]]

@@ -1,5 +1,7 @@
 #' Interactively Select A Fun Palette
 #'
+#' @aliases
+#' funPalPicker
 #' @author
 #' Seth Berry
 #' @description
@@ -9,14 +11,11 @@
 #' @examples
 #' funPalPicker()
 #' @export
+#' @import
+#' miniUI
+#' shiny
 
 funPalPicker = function() {
-
-library(shiny); library(miniUI)
-
-source("funPalettes.R")
-
-source("showFunPal.R")
 
 ui = miniPage(
   gadgetTitleBar("Fun Palette Color Selector",
