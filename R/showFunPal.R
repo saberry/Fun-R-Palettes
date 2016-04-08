@@ -7,11 +7,14 @@
 #' @description
 #' This function will simultaneously plot the color palette and print
 #' the hex values to console.
-#' @param name Name of desired palette. Choices are:
+#' @param name Palette name. Choices are:
 #'   \code{spBoys}, \code{spCartman},  \code{spcredits},
 #'   \code{spKenny}, \code{spKyle},  \code{spStan}, \code{boem},
 #'   \code{xmen1},  \code{xmen2}, \code{marvel},
-#'   \code{turboKid1}, \code{turboKid2}, \code{turboKid3}
+#'   \code{turboKid1}, \code{turboKid2}, \code{turboKid3},
+#'   \code{beavisButthead}
+#' @param n Number of colors to print. For all palettes except beavisButthead,
+#' the max is 5.
 #' @examples
 #' showFunPal("spBoys")
 #' @export

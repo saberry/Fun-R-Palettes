@@ -1,7 +1,7 @@
 #' Hex Values for Palettes
 #'
 #' A list containing all of the palettes and their associated hex values.
-#'
+#' @aliases funPals
 #' @format A list containing 13 items
 #' \describe{
 #'  \item{paletteName}{The name of each palette}}

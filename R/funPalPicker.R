@@ -9,7 +9,7 @@
 #' color palette.  You will see the palette and the hex values will be
 #' printed out to the console on each selection.
 #' @examples
-#' funPalPicker()
+#' \dontrun{funPalPicker()}
 #' @export
 #' @import
 #' miniUI
@@ -19,7 +19,7 @@ funPalPicker = function() {
 
 ui = miniPage(
   gadgetTitleBar("Fun Palette Color Selector",
-                 left = miniTitleBarCancelButton(),
+                 left = miniTitleBarCancelButton("cancel", "Cancel"),
                  right = miniTitleBarButton("done", "Done", primary = TRUE)),
   miniContentPanel(selectInput("funPalSelection", "Pick Your Palette!",
                                 choices = names(funPals)),
@@ -31,6 +31,9 @@ server = function(input, output, session) {
     showFunPal(input$funPalSelection)
   })
   observeEvent(input$done, {
+    stopApp()
+  })
+  observeEvent(input$cancel, {
     stopApp()
   })
 }

@@ -12,7 +12,7 @@ color palette.  You will see the palette and the hex values will be
 printed out to the console on each selection.
 }
 \examples{
-funPalPicker()
+\dontrun{funPalPicker()}
 }
 \author{
 Seth Berry

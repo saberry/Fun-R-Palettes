@@ -7,11 +7,15 @@
 showFunPal(name, n)
 }
 \arguments{
-\item{name}{Name of desired palette. Choices are:
+\item{name}{Palette name. Choices are:
 \code{spBoys}, \code{spCartman},  \code{spcredits},
 \code{spKenny}, \code{spKyle},  \code{spStan}, \code{boem},
 \code{xmen1},  \code{xmen2}, \code{marvel},
-\code{turboKid1}, \code{turboKid2}, \code{turboKid3}}
+\code{turboKid1}, \code{turboKid2}, \code{turboKid3},
+\code{beavisButthead}}
+
+\item{n}{Number of colors to print. For all palettes except beavisButthead,
+the max is 5.}
 }
 \description{
 This function will simultaneously plot the color palette and print
